@@ -552,7 +552,7 @@ if ( isset( $batcache->cache['time'] ) && // We have cache
 if ( ! $batcache->do || ! $batcache->genlock )
 	return;
 add_filter( 'status_header', array( &$batcache, 'status_header' ), 10, 2 );
-add_filter( 'wp_redirect_status', array( &$batcache, 'redirect_status' ), 10, 2 ); )
+add_filter( 'wp_redirect_status', array( &$batcache, 'redirect_status' ), 10, 2 );
 
 ob_start(array(&$batcache, 'ob'));
 
